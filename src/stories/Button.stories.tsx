@@ -11,6 +11,9 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
+  args: {
+    label: 'Button'
+  }
 } as ComponentMeta<typeof Button>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -37,5 +40,5 @@ Large.args = {
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
-  label: 'Button',
+  // label: 'Button',
 };
